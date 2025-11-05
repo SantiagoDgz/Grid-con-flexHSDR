@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #000000;
+	color: #2f4ba0;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: xx-large;
+}
+
+
+h1{
+	color: #2cbab5;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 55px;
+}
+
+.grid,
+.grid-pixeles,
+.grid-repeat,
+.grid-area,
+.grid-posicion{
+	width: 90%;
+	max-width: 1000px;
+	border: 10px solid #393e4d;
+	margin: auto;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.grid div,
+.grid-pixeles div,
+.grid-repeat div,
+.grid-area div,
+.grid-posicion div{
+	display: block;
+	padding: 20px;
+	color: #fff;
+	background: #2cbab5;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
+}

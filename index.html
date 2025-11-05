@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos.css">
+    <title>Ejemplos de GRID CSS3</title>
+
+    <style>
+    .grid-pixeles{
+	display: grid;
+
+	grid-template-columns: 200px 400px 300px 100px;
+    grid-template-rows: 200px 100px 300px;
+    
+    }   
+
+       .grid{
+	display: grid;
+
+	grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    
+    } 
+
+
+    .grid-repeat{
+        display: grid;
+
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 2fr);
+
+        grid-gap: 20px;
+    }
+
+    .grid-area{
+        display:grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+            "header    header       header"
+            "sidebar1   contenido   sidebar2"
+            "sidebar1   widget      sidebar2"
+            "footer     footer      footer";
+
+    }
+
+    .grid-area .header{
+        background: orangered;
+        grid-column-start: header;
+        grid-column-end: header;
+    }
+
+    .grid-area .sidebar1{
+        background: lightseagreen;
+        grid-column: sidebar1;
+        grid-row: sidebar1;
+    }
+
+    .grid-area .contenido{
+        background: fuchsia;
+        grid-area: contenido;
+    }
+
+    .grid-area .widget{
+        background: rgb(70, 70, 124);
+        grid-area: widget;
+    }
+
+    .grid-area .sidebar2{
+        background: rgba(0, 15, 63, 0.918);
+        grid-area: sidebar2;
+    }
+
+    .grid-area .footer{
+        background: rgb(255, 138, 71);
+        grid-area: footer;
+    }
+
+    .grid-posicion{
+     display: grid;
+     grid-gap: 50px;
+     grid-template-columns: repeat(3, 5fr);
+     grid-template-rows: repeat(3, 200px);
+
+     justify-items: center;
+     align-items: center;  
+}
+
+.grid-posicion {
+     background: #8a3bb5;
+     justify-self: start;
+     align-self: start;
+}
+
+    
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Fundamentos de GRID (CSS3)</h1>
+    </header>
+
+    <h2>GRID con Area</h2>
+    <div class="grid-area">
+            <div class="header">1</div>
+            <div class="sidebar1">2</div>
+            <div class="contenido">3</div>
+            <div class="widget">4</div>
+            <div class="sidebar2">5</div>
+            <div class="footer">6</div>
+    </div>
+
+    <br>
+
+    <h2>GRID con Fracciones</h2>
+        <div class="grid">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+        </div>
+
+        <br>
+
+
+    <h2>GRID con pixeles</h2>
+    <div class="grid-pixeles">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+
+    <br>
+
+        <h2>GRID con repeat</h2>
+    <div class="grid-repeat">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+    <br>
+
+
+    <h2>GRID FLEX o POSICIONAMIENTO</h2>
+    <div class="grid-posicion">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+
+
+</body>
+</html>
